@@ -19,8 +19,8 @@ def generate_random_dns_code(ip_range_start, ip_range_end):
 
 def main():
     try:
-        num_codes = int(input("چندتا کد بسازم؟ "))
-        print(f"{num_codes} کد دی‌ان‌اس رندوم:")
+        num_codes = int(input("How many codes should I make?"))
+        print(f"{num_codes}:")
         
         ip_range_start = [37, 236, 0, 0]
         ip_range_end = [37, 236, 255, 255]
@@ -28,7 +28,7 @@ def main():
         for _ in range(num_codes):
             print(generate_random_dns_code(ip_range_start, ip_range_end))
     except ValueError:
-        print("لطفاً یک عدد صحیح وارد کنید.")
+        print("Please enter an integer: ")
 
 if __name__ == "__main__":
     main()

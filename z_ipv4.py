@@ -20,7 +20,7 @@ def generate_random_dns_code(ip_range_start, ip_range_end):
 def main():
     try:
         num_codes = int(input("How many codes should I make?"))
-        print(f"{num_codes}:")
+        print(f"{num_codes}")
         
         ip_range_start = [37, 236, 0, 0]
         ip_range_end = [37, 236, 255, 255]
